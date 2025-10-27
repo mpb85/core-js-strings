@@ -380,8 +380,7 @@ function reverseWords(str) {
   const arr = str.split(' ');
   const newArr = [];
   if (str.length === 0) return str;
-  // eslint-disable-next-line func-names
-  arr.forEach(function (item) {
+  arr.forEach(function bar(item) {
     newArr.push(item.split('').reverse().join(''));
   });
   const newStr = newArr.join(' ');
